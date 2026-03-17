@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 7% 7%;
+    --foreground: 50 56% 91%;
+
+    --card: 150 7% 10%;
+    --card-foreground: 50 56% 91%;
+
+    --popover: 150 7% 10%;
+    --popover-foreground: 50 56% 91%;
+
+    --primary: 30 68% 64%;
+    --primary-foreground: 150 7% 7%;
+
+    --secondary: 150 7% 14%;
+    --secondary-foreground: 50 56% 91%;
+
+    --muted: 150 5% 18%;
+    --muted-foreground: 50 20% 60%;
+
+    --accent: 30 68% 64%;
+    --accent-foreground: 150 7% 7%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 50 56% 91%;
+
+    --border: 150 5% 20%;
+    --input: 150 5% 20%;
+    --ring: 30 68% 64%;
+
+    --radius: 0px;
+
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Work Sans', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  a {
+    @apply text-foreground transition-colors duration-200;
+  }
+
+  a:hover {
+    color: hsl(var(--primary));
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Page transition */
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 70ms ease-in;
+}
