@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/band", label: "Band" },
-  { to: "/music", label: "Music" },
-  { to: "/media", label: "Media" },
-  { to: "/contact", label: "Contact" },
+  { to: "/", label: "Home Loud Sugar" },
+  { to: "/about", label: "About Loud Sugar" },
+  { to: "/band", label: "Band Loud Sugar" },
+  { to: "/music", label: "Music Loud Sugar" },
+  { to: "/media", label: "Media Loud Sugar" },
+  { to: "/contact", label: "Contact Loud Sugar" },
 ];
 
 const BottomNav = () => {
@@ -19,7 +19,7 @@ const BottomNav = () => {
           key={item.to}
           to={item.to}
           className={`transition-colors duration-200 ${
-            location.pathname === item.to || 
+            location.pathname === item.to ||
             (item.to !== "/" && location.pathname.startsWith(item.to))
               ? "text-primary"
               : "text-foreground/70 hover:text-primary"
