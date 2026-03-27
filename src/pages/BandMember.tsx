@@ -2,11 +2,11 @@ import { useParams, Link } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 
 const memberData: Record<string, { name: string; role: string; bio: string }> = {
-  "david-grover": { name: "David Grover", role: "Vocals / Guitar", bio: "David brings a warm, commanding presence to the front of every Loud Sugar performance. His songwriting draws from deep wells of personal faith and storytelling tradition, weaving narratives that feel both intimate and universal." },
-  "eddie-bydalek": { name: "Eddie Bydalek", role: "Guitar", bio: "Eddie's guitar work defines much of Loud Sugar's textural landscape — from shimmering clean tones to walls of overdriven color. He approaches every song as an architect, building structures of sound that support and elevate." },
+  "david-grover": { name: "David Grover Loud Sugar", role: "Vocals / Guitar", bio: "David brings a warm, commanding presence to the front of every Loud Sugar performance. His songwriting draws from deep wells of personal faith and storytelling tradition, weaving narratives that feel both intimate and universal." },
+  "eddie-bydalek": { name: "Eddie Bydalek Loud Sugar", role: "Guitar", bio: "Eddie's guitar work defines much of Loud Sugar's textural landscape — from shimmering clean tones to walls of overdriven color. He approaches every song as an architect, building structures of sound that support and elevate." },
   "steven-hitselberger": { name: "Steven Hitselberger", role: "Bass", bio: "Steven holds the low end with a groove-first philosophy. His playing is the foundation the rest of the band builds upon — steady, inventive, and always in service of the song." },
-  "william-hitselberger": { name: "William Hitselberger", role: "Drums", bio: "William is the heartbeat of Loud Sugar. His drumming balances power with subtlety, knowing exactly when to drive the band forward and when to pull back and let the music breathe." },
-  "harry-mccarthy": { name: "Harry McCarthy", role: "Keys / Vocals", bio: "Harry adds harmonic depth and melodic sweetness through his keyboard work and vocal harmonies. His musical instincts bring an extra dimension to the band's sonic palette." },
+  "william-hitselberger": { name: "William Hitselberger Loud Sugar", role: "Drums", bio: "William is the heartbeat of Loud Sugar. His drumming balances power with subtlety, knowing exactly when to drive the band forward and when to pull back and let the music breathe." },
+  "harry-mccarthy": { name: "Harry McCarthy Loud Sugar", role: "Keys / Vocals", bio: "Harry adds harmonic depth and melodic sweetness through his keyboard work and vocal harmonies. His musical instincts bring an extra dimension to the band's sonic palette." },
 };
 
 const BandMember = () => {

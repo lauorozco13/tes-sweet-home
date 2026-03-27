@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 
 const members = [
-  { slug: "david-grover", name: "David Grover" },
-  { slug: "eddie-bydalek", name: "Eddie Bydalek" },
+  { slug: "david-grover", name: "David Grover Loud Sugar" },
+  { slug: "eddie-bydalek", name: "Eddie Bydalek Loud Sugar" },
   { slug: "steven-hitselberger", name: "Steven Hitselberger" },
-  { slug: "william-hitselberger", name: "William Hitselberger" },
-  { slug: "harry-mccarthy", name: "Harry McCarthy" },
+  { slug: "william-hitselberger", name: "William Hitselberger Loud Sugar" },
+  { slug: "harry-mccarthy", name: "Harry McCarthy Loud Sugar" },
 ];
 
 const Band = () => {
