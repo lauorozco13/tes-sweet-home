@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
-  { to: "/", label: "Home Loud Sugar" },
+  { to: "/", label: "This is a home edit message to see if this works" },
   { to: "/about", label: "About Loud Sugar" },
   { to: "/band", label: "Band Loud Sugar" },
   { to: "/music", label: "Music Loud Sugar" },
